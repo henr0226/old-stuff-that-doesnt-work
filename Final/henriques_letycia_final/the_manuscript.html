@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ottawa, Ontario, Carleton University, ARC ms.1</title>
+<link rel="stylesheet" href="styles/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<body style="background:DarkRed"> 
+
+<div class="row">
+	<div class="logo">
+            <img class="logo-img" src="images/logo.jpg" alt="logo" style="width:205px">
+	</div>
+    <div class="break-one">
+    </div>
+	<div class="header">
+            <div id="search-bar" class="widget-search">
+                <div style="text-align: right;">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        <h2>Ottawa, Ontario, Carleton University, ARC ms.1<h2>
+	</div>
+</div>
+
+
+<div class="row">
+    <div class="navigation" style="background-color:DarkRed;">
+            <div class="list-one">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about-page">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="the_manuscript.html">THE MANUSCRIPT</a>
+                    </li>
+                    <div class="dropdown">
+                        <li>
+                            <a href="research-page">RESEARCH</a>
+                        </li>
+                        <div class="list-two">
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li>
+                                            <a href="origin-page">Origin and Provenance</a>
+                                        </li>
+                                        <li>
+                                            <a href="chant-page">The Chant</a>
+                                        </li>
+                                        <li>
+                                            <a href="transcription-page">Transcription</a>
+                                        </li>
+                                        <li>
+                                            <a href="description-page">Physical Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="palaeography-page">Palaeography</a>
+                                        </li>
+                                        <li>
+                                            <a href="damage-page">Damages, Imperfections, and Repairs</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalogue-page">Catalogue Entry</a>
+                                        </li>
+                                        <li>
+                                            <a href="bibliography-page">Bibliography</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <li>
+                        <a href="contact-page.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    
+    <div class="break-two" style="background-color:DarkRed;"></div>
+    
+    
+    <div class="maintxt" style="background-color:DarkRed;">
+        <h1 style="text-align:center">The Manuscript</h1>
+        
+<div class="container">
+  <div class="mySlides">
+    <img src="images/0R.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <img src="images/0V+1R.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="images/1V+2R.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="images/2V+3R.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="images/3V+4R.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="images/4V+5R.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/0R.jpg" style="width:50%" onclick="currentSlide(1)" alt="0R">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/0V+1R.jpg" style="width:100%" onclick="currentSlide(2)" alt="0V+1R">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/1V+2R.jpg" style="width:100%" onclick="currentSlide(3)" alt="1V+2R">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/2V+3R.jpg" style="width:100%" onclick="currentSlide(4)" alt="2V+3R">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/3V+4R.jpg" style="width:100%" onclick="currentSlide(5)" alt="3V+4R">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/4V+5R.jpg" style="width:100%" onclick="currentSlide(6)" alt="4V+5R">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+        
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer_title">
+        <h4>Copyright Info</h4>
+    </div>
+    <div class="footer_text">
+		Copyright &copy; 2018 Letycia Henriques
+    </div>
+</div>
+
+<script type="text/javascript" src="script/slider.js"></script>
+
+</body>
+</html>
